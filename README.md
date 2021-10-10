@@ -20,6 +20,10 @@ Enable VM feature
   dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
 
+Download the Linux kernel update package
+
+https://docs.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package
+
 Set WSL as your default version
 
 ```bash
@@ -27,6 +31,9 @@ Set WSL as your default version
 ```
 
 install Ubuntu 20.04 LTS in microsoft store
+
+https://docs.microsoft.com/en-us/windows/wsl/install
+https://docs.microsoft.com/en-us/windows/wsl/install-manual
 
 ## Messages in CosmWasm
 
@@ -64,5 +71,32 @@ All of our core code will be located in these three functions, or in functions c
 
 ## Installing Rust
 
-https://docs.microsoft.com/en-us/windows/wsl/install
-https://docs.microsoft.com/en-us/windows/wsl/install-manual
+select install default
+
+```bash
+  curl https://sh.rustup.rs | bash
+  source $HOME/.cargo/env
+  rustup
+```
+
+```bash
+  rustup doc --book
+```
+
+open brower https://doc.rust-lang.org/book/
+
+```bash
+  sudo apt update
+  sudo apt install build-essential
+```
+
+and install rustlings https://github.com/rust-lang/rustlings
+
+```bash
+  curl -L https://git.io/install-rustlings | bash
+```
+
+```bash
+  cd rustlings/
+  rustlings
+```
