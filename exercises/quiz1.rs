@@ -11,7 +11,7 @@
 fn calculate_apple_price(unit : u32) -> u32 {
     
   if unit > 40 {
-      unit * 1
+      unit
   }
   else {
       unit * 2
